@@ -26,3 +26,18 @@ $xl: 75em;
         }
     }
 }
+
+@mixin navoptions{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+@mixin videocss{
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}

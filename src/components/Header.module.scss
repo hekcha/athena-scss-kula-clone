@@ -17,7 +17,6 @@
             padding: 0 $spacing-lg;
         }
         transition: 0.3s ease padding;
-
         height: 100%;
         display: flex;
         align-items: center;
@@ -28,16 +27,12 @@
 
 
             &:nth-child(2) {
-                display: flex;
-                justify-content: flex-end;
-                height: 100%;
-
+                @include navoptions;
                 margin-right: $spacing-md;
             }
             &:last-of-type {
-                display: flex;
-                justify-content: flex-end;
-                flex: 0;
+                @include navoptions;
+
             }
         }
     }
@@ -81,10 +76,6 @@
     text-align: center;
     padding: $spacing-md 0;
     margin-right: 830px;
-    // @include breakpoint(md)
-    // {
-    //     margin-right: -100%;
-    // }
 
     &--open {
         transition: 0.2s ease right;
@@ -99,9 +90,6 @@
         color: inherit;
 
         height: 100%;
-        // &:nth-child(3){
-        //     margin-right: 830px;
-        // }
 
         transition: 0.3s ease color;
         &:hover {
@@ -129,10 +117,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-
-            // &:nth-child(3){
-
-            // }
         }
     }
 

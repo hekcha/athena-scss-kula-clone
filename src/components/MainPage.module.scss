@@ -5,15 +5,12 @@
     flex-direction: row;
     position: absolute;
     top:20%;
-    // width: 200%;
-    // height: 100%;
     justify-content: space-evenly;
 
     &__description{
         display: flex;
         flex-direction: column;
         position: relative;
-        // top: 2%;
         left: 100px;
         width: 450px;
         margin-top: 0;
@@ -65,28 +62,13 @@
 
 
         &__video1{
-            display: block;
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
-            opacity: 1;
-            transition: opacity 1s ease-in-out;
+            @include videocss
         }
         &__video2{
-            display: block;
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
-            opacity: 1;
-            transition: opacity 1s ease-in-out;
+            @include videocss
         }
         &__video3{
-            display: block;
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
-            opacity: 1;
-            transition: opacity 1s ease-in-out;
+            @include videocss
         }
     }
 
